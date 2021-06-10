@@ -22,6 +22,7 @@
             <img id="brick" src="assets/img/brick.jpeg" alt="brickkie">
             <img src="assets/img/pleister.jpeg" alt="pleistie" id="pleister">
             <img src="assets/img/laminaat.jpeg" alt="lammie" id="laminaat">
+            <img src="assets/img/structurefine.jpeg" alt="" id="fine">
         </a-assets>
         <!--CAMERA-->
         <!--<a-entity camera="" position="0 2.429 8.916" wasd-controls="false" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>-->
@@ -34,15 +35,15 @@
         <!--FLOOR-->
         <a-box color="" material="src:#laminaat" geometry="" scale="20 0.11 20" id="floor"></a-box>
         <!--WALL ONE-->
-        <a-box color="" material="src:#pleister" geometry="" position="-9.799 5.007 0" scale="0.2 10 20" id="wall1"></a-box>
+        <a-box color="" material="src:#fine" geometry="" position="-9.799 5.007 0" scale="0.2 10 20" id="wall1"></a-box>
         <!--WALL RIGHT-->
-        <a-box color="green" material="src:#pleister" geometry="" position="9.930 4.971 0.205" scale="0.2 10 20" id="wall2"></a-box>
+        <a-box color="green" material="src:#fine" geometry="" position="9.930 4.971 0.205" scale="0.2 10 20" id="wall2"></a-box>
         <!--WALL BACK-->
-        <a-box color="blue" scale="20 10 1" geometry="" position="0 4.995 9.822" material="src:#pleister" id="wall3"></a-box>
+        <a-box color="blue" scale="20 10 1" geometry="" position="0 4.995 9.822" material="src:#fine" id="wall3"></a-box>
         <!--WALL FRONT-->
-        <a-box color="purple" material="src:#pleister" geometry="" position="0 5.00407 -9.51025" scale="20 10 1" id="wall4"></a-box>
+        <a-box color="purple" material="src:#fine" geometry="" position="0 5.00407 -9.51025" scale="20 10 1" id="wall4"></a-box>
         <!--CEILING-->
-        <a-box color="gray" material="" geometry="" position="0 9.826 0.385" scale="20 0.2 25" id="ceiling"></a-box>
+        <a-box color="gray" material="src:#pleister" geometry="" position="0 9.826 0.385" scale="20 0.2 25" id="ceiling"></a-box>
         <!--DOOR-->
         <a-entity gltf-model="#door" position="0 0 -8.880" scale="0.02 0.02 0.02" material="src:#laminaat" id="door"></a-entity>
         <!--BED-->
