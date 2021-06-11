@@ -23,6 +23,9 @@
             <a-asset-items id="outlet" src="assets/outlet/outlet.gltf"></a-asset-items>
             <a-asset-items id="clothdrawer" src="assets/clothdrawer/clothdrawer.gltf"></a-asset-items>
             <a-asset-items id="bookshelf" src="assets/bookshelf/bookshelf.gltf"></a-asset-items>
+            <a-asset-items id="arm" src="assets/demonarm/demonarm.gltf"></a-asset-items>
+            <a-asset-items id="despair" src="assets/despair/despair.gltf"></a-asset-items>
+            <a-asset-items id="harpy" src="assets/dharpy/dharpy.gltf"></a-asset-items>
             <img id="brick" src="assets/img/brick.jpeg" alt="brickkie">
             <img src="assets/img/pleister.jpeg" alt="pleistie" id="pleister">
             <img src="assets/img/laminaat.jpeg" alt="lammie" id="laminaat">
@@ -77,6 +80,13 @@
         <a-entity gltf-model="#clothdrawer" position="8.663 0 0" rotation="0 -90 0" scale="1.5 1.5 1.5" id="clothesDrawer"></a-entity>
         <!--BOOKSHELF-->
         <a-entity gltf-model="#bookshelf" position="6.670 -5.190 -6.596" rotation="" scale="4 4 4" id="bookshelf"></a-entity>
-        <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue" position="0 2.787 0"></a-entity>
+        <!--TEST BOX ANIMATION-->
+        <a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue" position="0 2.787 0" id="test"></a-entity>
+        <!--DEMON ARM-->
+        <a-entity gltf-model="#arm" position="0.991 1.793 4.790" rotation="-90 0 90" scale="0.8 0.8 0.8" id="demonArm"></a-entity>
+        <!--DESPAIR DEMON-->
+        <a-entity gltf-model="#despair" position="-8.876 2.866 0.372" rotation="-90 90 0" scale="0.3 0.3 0.3" id="despairDemon"></a-entity>
+        <!--DARK HARPY-->
+        <a-entity gltf-model="#harpy" position="0 6.015 -2.788" rotation="90 180 0" scale="0.25 0.25 0.25" id="darkHarpy"></a-entity>
     </a-scene>
 </html>
