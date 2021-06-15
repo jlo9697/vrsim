@@ -7,11 +7,12 @@
     <title>VR Sleep Simulator</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <div class="vignette"></div>
     <a-scene light="defaultLightsEnabled: true">
         <a-assets>
             <a-asset-item id="door" src="assets/browndoor/door.gltf"></a-asset-item>
@@ -38,58 +39,80 @@
         </a-assets>
         <!--LIGHT AMBIENCE-->
         <a-entity light="type: ambient; color: #1b0909" position="0 3.865 0" id="lighting"></a-entity>
+        
         <!--LIGHT DIRECTIONAL-->
         <!--<a-entity light="type: directional; color: #EEE; intensity: 0.5" position="-1 1 0" id="directional"></a-entity>-->
+        
         <!--SOUND-->
         <a-entity sound="src: url(assets/ambience.mp3); autoplay: true"></a-entity>
+        
         <!--CAMERA-->
         <a-entity id="rig" position="0 1.3 7.5">
             <a-entity id="camera" camera look-controls wasd-controls="">
                 <a-entity cursor="fuse: true; fuseTimeout: 500" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat"></a-entity>
             </a-entity>
         </a-entity>
+        
         <!--SKY-->
         <a-sky color="black"></a-sky>
+        
         <!--BEDROOM-->
         <!--FLOOR-->
         <a-box color="" material="src:#laminaat" geometry="" scale="20 0.11 20" id="floor"></a-box>
+        
         <!--WALL ONE-->
         <a-box color="" material="src:#fine" geometry="" position="-9.799 5.007 0" scale="0.2 10 20" id="wall1"></a-box>
+        
         <!--WALL RIGHT-->
         <a-box color="gray" material="src:#fine" geometry="" position="9.930 4.971 0.205" scale="0.2 10 20" id="wall2"></a-box>
+        
         <!--WALL BACK-->
         <a-box color="gray" scale="20 10 1" geometry="" position="0 4.995 9.822" material="src:#fine" id="wall3"></a-box>
+       
         <!--WALL FRONT-->
         <a-box color="gray" material="src:#fine" geometry="" position="0 5.00407 -9.51025" scale="20 10 1" id="wall4"></a-box>
+       
         <!--CEILING-->
         <a-box color="" material="src:#pleister" geometry="" position="0 9.826 0.385" scale="20 0.2 25" id="ceiling"></a-box>
+        
         <!--NIGHT SKY PIC-->
         <a-box color="" material="src:#nightsky" geometry="" position="9.820 4.664 -3.451" scale="0.010 3.350 4.360" id="sky"></a-box>
         <a-box color="" material="src:#nightsky" geometry="" position="9.820 4.664 4.562" scale="0.010 3.350 4.5" id="sky2" event-set__enter="_event: mouseenter; material: src:#demonpic"
         event-set__leave="_event: mouseleave; material: src:#nightsky"></a-box>
+        
         <!--DOOR-->
         <a-entity gltf-model="#door" position="0 0 -8.880" scale="0.02 0.02 0.02" material="src:#laminaat" id="door"></a-entity>
+       
         <!--BED-->
         <a-entity gltf-model="#bed" position="8.5 2.5 0.691" rotation="0 90 0" scale="10 10 10" id="bed"></a-entity>
+       
         <!--DRAWER-->
         <a-entity gltf-model="#drawer" position="3.587 0.535 6.526" rotation="0 -88.690 0" scale="2 2 2" id="drawer"></a-entity>
+      
         <!--WINDOWS-->
         <a-entity gltf-model="#window" position="5.099 9.628 -10" rotation="90 0 0" scale="4 4 7" id="window1"></a-entity>
         <a-entity gltf-model="#window" position="5.099 9.628 -7.617" rotation="90 0 0" scale="4 4 7" id="window2"></a-entity>
         <a-entity gltf-model="#window" position="5.099 9.628 -2" rotation="90 0 0" scale="4 4 7" id="window3"></a-entity>
         <a-entity gltf-model="#window" position="5.099 9.628 0.351" rotation="90 0 0" scale="4 4 7" id="window4"></a-entity>
+       
         <!--DESK VERS 2-->
         <a-entity gltf-model="#gd" position="-10.022 -1.806 -4.058" rotation="0 90 0" scale="4 4 4" id="gamingDesk"></a-entity>
+      
         <!--CLOSET-->
         <a-entity gltf-model="#clothes" position="-8.828 0.286 5.706" rotation="0 90 0" scale="2 2 2" id="closet"></a-entity>
+      
         <!--OUTLET-->
         <a-entity gltf-model="#outlet" position="-9.617 0.094 -1.839" rotation="0 0 -90" scale="0.00002 0.00002 0.00002" id="outlet"></a-entity>
+      
         <!--CLOTHES DRAWER-->
         <a-entity gltf-model="#clothdrawer" position="8.663 1.023 0" rotation="0 -90 0" scale="1.5 1.5 1.5" id="clothesDrawer"></a-entity>
+      
         <!--BOOKSHELF-->
         <a-entity gltf-model="#bookshelf" position="6.670 -5.190 -6.596" rotation="" scale="4 4 4" id="bookshelf"></a-entity>
+      
         <!--TEST BOX ANIMATION-->
         <!--<a-entity id="box" cursor-listener geometry="primitive: box" material="color: blue" position="0 2.787 0" id="test"></a-entity>-->
+      
         <!--DEMON ARM-->
         <a-entity gltf-model="#arm" position="0.991 1.793 4.790" rotation="-90 0 90" scale="0.8 0.8 0.8" id="demonArm"
         animation__rotation="property: rotation; from: -90 0 90; to: 90 0 90; dur: 4000; 
@@ -104,6 +127,7 @@
         animation__position2="property: position; from: 0.991 0.740 3.6944; to: 0.991 1.793 4.790; dur: 2000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
+       
         <!--DESPAIR DEMON-->
         <a-entity gltf-model="#despair" position="-8.876 2.866 0.372" rotation="-90 0 0" scale="0.3 0.3 0.3" id="despairDemon"
         animation__rotation="property: rotation; from: -90 0 0; to: -90 0 47.489; dur: 4000; 
@@ -118,6 +142,7 @@
         animation__position2="property: position; from: -8.392 2.866 0.728; to: -8.876 2.866 0.372; dur: 2000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
+       
         <!--DARK HARPY-->
         <a-entity gltf-model="#harpy" position="0 8.407 -4.186" rotation="90 180 0" scale="0.4 0.4 0.4" id="darkHarpy"
         animation__position="property: position; from: 0 8.407 -4.186; to: 0 3.453 -4.186; dur: 2000; 
@@ -126,6 +151,7 @@
         animation__position2="property: position; from: 0 3.453 -4.186; to: 0 8.407 -4.186; dur: 2000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
+      
         <!--BLOB DEMON-->
         <a-entity gltf-model="#blob" position="-2.833 2.162 -5.844" rotation="-90 90 10" scale="0.12 0.12 0.12" id="blobDemon" 
         animation__position="property: position; from: -2.833 2.162 -5.844; to: -1.319 2.162 2.318; dur: 500; 
@@ -134,6 +160,7 @@
         animation__position2="property: position; from: -1.319 2.162 2.318; to: -2.833 2.162 -5.844; dur: 500; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
+      
         <!--EYES-->
         <a-entity gltf-model="#eye" position="0 9.769 3.999" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes1"
         animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
@@ -233,5 +260,7 @@
         animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
+
+        <a-box color="red" link="href: index.html" position="0 2 0"></a-box>
     </a-scene>
 </html>

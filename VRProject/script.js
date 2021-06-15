@@ -1,5 +1,6 @@
-AFRAME.registerComponent('auto-enter-vr', {
-    init: function () {
-      this.el.sceneEl.enterVR();
-    }
-  });
+/*
+function vrMode(){
+    document.getElementById('maat').enterVR();
+}
+vrMode()
+*/
