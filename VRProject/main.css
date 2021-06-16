@@ -1,0 +1,61 @@
+@font-face {
+    font-family: heptaslab;
+    src: url(fonts/HeptaSlab-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: heptaslab;
+    transition: 0.3s;
+}
+
+html{
+    background: url(bg/blacknoiseanimated.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+h1, h3{
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: 	#f8f8ff;
+}
+
+h3{
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+button{
+    color: #f8f8ff;
+    background: url(bg/blacknoise.jpeg);
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+button:hover{
+    cursor: pointer;
+    color: red;
+}
