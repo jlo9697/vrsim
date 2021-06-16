@@ -7,11 +7,13 @@
     <title>Simulating In Progress</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@^4.1.1/dist/aframe-animation-timeline-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-timeline-component@2.0.0/dist/aframe-animation-timeline-component.min.js"></script> 
     <script src="script.js"></script>
 </head>
 
 <body>
-    <a-scene light="defaultLightsEnabled: true">
+    <a-scene light="defaultLightsEnabled: true"><!--animation-timeline_1="timeline=#eyetime; loop: true"-->
         <a-assets>
             <a-asset-item id="door" src="assets/browndoor/door.gltf"></a-asset-item>
             <a-asset-item id="bed" src="assets/bed/bed.gltf"></a-asset-item>
@@ -34,6 +36,11 @@
             <img src="assets/img/structurefine.jpeg" alt="" id="fine">
             <img src="assets/img/nightsky.jpeg" alt="" id="nightsky">
             <img src="assets/img/demonpic.jpeg" alt="" id="demonpic">
+            
+            <!--<a-timeline id="eyetime">
+                <a-timeline-animation select="#eyes1" name="moveleft"></a-timeline-animation>
+                <a-timeline-animation select="#eyes1" name="moveright"></a-timeline-animation>
+            </a-timeline>-->
         </a-assets>
         <!--LIGHT AMBIENCE-->
         <a-entity light="type: ambient; color: #1b0909" position="0 3.865 0" id="lighting"></a-entity>
@@ -166,7 +173,6 @@
       
         <!--EYES-->
         <a-entity gltf-model="#eye" position="0 9.769 3.999" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes1"
-        animation="property:rotation; from:-90 0 0; to: -50 0 0; dur:2000; easing:linear; loop: true"
         animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
         easing: linear; startEvents: mouseenter"
 
