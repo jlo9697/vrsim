@@ -7,9 +7,9 @@
     <title>Simulating In Progress</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-component@^4.1.1/dist/aframe-animation-timeline-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-animation-timeline-component@2.0.0/dist/aframe-animation-timeline-component.min.js"></script> 
-    <script src="script.js"></script>
+    <!--<script src="https://unpkg.com/aframe-animation-component@5.1.2/dist/aframe-animation-component.min.js"></script>-->
+    <!--<script src="https://unpkg.com/aframe-animation-timeline-component@2.0.0/dist/aframe-animation-timeline-component.min.js"></script>-->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -40,6 +40,10 @@
             <!--<a-timeline id="eyetime">
                 <a-timeline-animation select="#eyes1" name="moveleft"></a-timeline-animation>
                 <a-timeline-animation select="#eyes1" name="moveright"></a-timeline-animation>
+            </a-timeline>-->
+            <!--<a-timeline id="eyetime">
+                <a-timeline-animation select="#test" names="anna"></a-timeline-animation>
+                <a-timeline-animation select="#test" names="oop"></a-timeline-animation>
             </a-timeline>-->
         </a-assets>
         <!--LIGHT AMBIENCE-->
@@ -173,101 +177,101 @@
       
         <!--EYES-->
         <a-entity gltf-model="#eye" position="0 9.769 3.999" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes1"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-0.672 9.769 1.210" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes2"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-3.049 9.769 -1.314" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes3"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-5.831 9.769 1.313" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes4"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-5.907 9.769 -3.615" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes5"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="2.451 9.769 1.398" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes6"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="4.649 9.769 -2.190" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes7"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-7.888 9.769 -5.753" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes8"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="7.793 9.769 -0.272" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes9"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="4.061 9.769 -6.808" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes10"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="8.048 9.769 -5.506" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes11"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-4.103 9.769 -7.619" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes12"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="-8.511 9.769 -0.852" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes13"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
         <a-entity gltf-model="#eye" position="5.728 9.769 4.685" rotation="-90 0 0" scale="0.004 0.004 0.004" id="eyes14"
-        animation__rotation="property: rotation; from: -90 0 0; to: -130 0 0; dur: 300; 
+        animation__rotation="property: rotation; to: -160 0 0; dur: 3000; 
         easing: linear; startEvents: mouseenter"
 
-        animation__rotation2="property: rotation; from: -130 0 0; to: -90 0 0; dur: 300; 
+        animation__rotation2="property: rotation; to: -90 0 0; dur: 3000; 
         easing: linear; startEvents: mouseleave"
         ></a-entity>
     </a-scene>
